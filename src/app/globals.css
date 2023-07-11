@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.bg-primary {
+  @apply font-bold text-white bg-[#00457a];
+}
+
+.bg-secondrary {
+  @apply bg-[#62aa57];
+}
+
+.hero_carousel_image {
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  height: 40vw;
+}
+
+.carousel_wrapper {
+  @apply w-full overflow-hidden;
+}
+
+.carousel_wrapper .slick-dots {
+  @apply bottom-[25px];
+}
+
+.carousel_wrapper .slick-dots li button:before {
+  @apply text-sm text-[#58ab5f];
+}
+
+.card-list {
+  @apply bg-[#ffffff] text-white;
+}
+
+.card-bodylist {
+  @apply bg-[#58ab5f];
+}
+
+.card-bodylist a {
+  @apply text-[#ffffff];
+}
+
+.subheading {
+  @apply min-h-[30px]
+}
